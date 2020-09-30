@@ -1,12 +1,16 @@
 body{
+/* gives everything in the body this type of font types */
     font-family: Arial, Helvetica, sans-serif;
 }
 
 div{
+/* gives every div 20 pixels of padding */
     padding:20px;
 }
 
 .logo-img{
+    /* need to treat the image as a "block level element" */
+    /* so you can now center it with "0 auto" 0=vertical auto=horizontal (centers it)*/
     display:block;
     margin:0 auto;
 }
@@ -20,6 +24,7 @@ fieldset{
     width: 75%;
     border: 1px solid #ddd;
     border-radius: 3px;
+/* Space around the fieledset vertacally and then hoziontal */
     padding: 5px 25px;
     margin-bottom: 20px;
     margin-top: 0px;
@@ -30,9 +35,11 @@ fieldset label{
 }
 
 form input{
+    /* will stack the input on top of each other. making the width the same for everything */
     display:block;
     width: 100%;
     padding: 5px;
+    /* The thickness of the border */
     border: 1px solid grey;
     border-radius: 2px;
     margin-bottom: 25px;
